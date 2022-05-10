@@ -18,8 +18,8 @@ const Experience = forwardRef((props, ref) => {
                 <CgBriefcase />
               </div>
               <div className="timeline-panel">
-                <h5>From June 2018 - Current - Web Services Sollutions</h5>
-                <h4>Front-end developer</h4>
+                <h5>From June 2018 - Current - Web Services Solutions</h5>
+                <h4>Frontend developer</h4>
               </div>
             </div>
             <div className="right column">
