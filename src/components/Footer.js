@@ -1,22 +1,35 @@
-import FileSaver from 'file-saver';
-import styled from 'styled-components';
+import FileSaver from "file-saver";
+import styled from "styled-components";
 import { CgArrowUp, CgArrowDown } from "react-icons/cg";
-
+import PropTypes from "prop-types";
 
 function Footer(props) {
   const saveFile = () => {
     FileSaver.saveAs(
-    process.env.PUBLIC_URL + "CV-DanaLazar.pdf",
-    "CV-DanaLazar.pdf"
-)}
- return (
+      `${process.env.PUBLIC_URL}CV-DanaLazar.pdf`,
+      "CV-DanaLazar.pdf"
+    );
+  };
+  return (
     <Wrapper>
       <div className="footer">
-        <div className="cv"><h2 onClick={saveFile}><CgArrowDown/>CV</h2></div>
-        <div className="up"><h2 onClick={()=> {
-          window.scrollTo(0, 0);
-           return props.top.current.scrollIntoView({behavior: "smooth"});
-          }}><CgArrowUp/>Up</h2></div>
+        <div className="cv">
+          <h2 onClick={saveFile}>
+            <CgArrowDown />
+            CV
+          </h2>
+        </div>
+        <div className="up">
+          <h2
+            onClick={() => {
+              window.scrollTo(0, 0);
+              return props.top.current.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            <CgArrowUp />
+            Up
+          </h2>
+        </div>
       </div>
     </Wrapper>
   );
@@ -56,5 +69,9 @@ const Wrapper = styled.section`
         
       }
 `;
+
+Footer.propTypes = {
+  top: PropTypes.object.isRequired,
+};
 
 export default Footer;
