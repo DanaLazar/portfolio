@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 function Footer(props) {
   const saveFile = () => {
     FileSaver.saveAs(
-      `${process.env.PUBLIC_URL}CV-DanaLazar.pdf`,
+      `https://danalazar.github.io/portfolio/CV-DanaLazar.pdf`,
       "CV-DanaLazar.pdf"
     );
   };
