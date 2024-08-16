@@ -8,7 +8,16 @@ import {
   IoLogoGithub,
 } from "react-icons/io";
 import { DiPhp, DiBootstrap, DiReact } from "react-icons/di";
-import { SiGraphql, SiMysql, SiJquery, SiNextdotjs, SiPrisma, SiJira, SiTailwindcss, SiTypescript } from "react-icons/si";
+import {
+  SiGraphql,
+  SiMysql,
+  SiJquery,
+  SiNextdotjs,
+  SiPrisma,
+  SiJira,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
 
 const Skills = () => {
   return (

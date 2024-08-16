@@ -3,16 +3,23 @@ const AboutMe = () => {
     <div className="AboutMe">
       <h2>Hello, I am Dana</h2>
       <p>
-      My journey in tech began as a content creator and product manager, where I honed my skills in understanding user needs and translating them into effective digital solutions.
+        My journey in tech began as a content creator and product manager, where
+        I honed my skills in understanding user needs and translating them into
+        effective digital solutions.
       </p>
       <p>
-      Since 2018, I've been dedicated to frontend development, starting with the fundamentals: HTML, CSS, and responsive design. My early work involved creating dynamic and user-friendly websites, including extensive experience with WordPress.
+        Since 2018, I&rsquo;ve been dedicated to frontend development, starting
+        with the fundamentals: HTML, CSS, and responsive design. My early work
+        involved creating dynamic and user-friendly websites, including
+        extensive experience with WordPress.
       </p>
       <p>
-      Over the past two years at Zitec, I've deepened my expertise in modern frontend technologies, focusing on React and Next.js. My work has involved building scalable, high-performance applications that prioritize user experience and accessibility.
+        Over the past two years at Zitec, I&rsquo;ve deepened my expertise in
+        modern frontend technologies, focusing on React and Next.js. My work has
+        involved building scalable, high-performance applications that
+        prioritize user experience and accessibility.
+      </p>
 
-      </p>
-     
       <h2>Some trivia</h2>
       <ul style={{ marginLeft: "20px" }}>
         <li>I enjoy reading history books.</li>

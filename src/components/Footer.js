@@ -4,18 +4,22 @@ import { CgArrowUp, CgArrowDown } from "react-icons/cg";
 import PropTypes from "prop-types";
 
 function Footer(props) {
-  
   return (
     <Wrapper>
       <div className="footer">
         <div className="cv">
-          <a href={Pdf} without rel="noopener noreferrer" target="_blank" className="link-pdf">
+          <a
+            href={Pdf}
+            without
+            rel="noopener noreferrer"
+            target="_blank"
+            className="link-pdf"
+          >
             <h2>
               <CgArrowDown />
               CV
             </h2>
           </a>
-          
         </div>
         <div className="up">
           <h2

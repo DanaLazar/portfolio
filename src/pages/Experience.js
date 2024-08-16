@@ -36,8 +36,8 @@ const Experience = forwardRef((props, ref) => {
                     }
                   >
                     heyblu.ro
-                  </span>   
-                </p>    
+                  </span>
+                </p>
                 <p>
                   <strong>react:</strong>
                   <span
@@ -47,8 +47,8 @@ const Experience = forwardRef((props, ref) => {
                     }
                   >
                     promotigo.com
-                  </span>   
-                </p>                
+                  </span>
+                </p>
                 <p>
                   <strong>javascript&css:</strong>
                   <span
@@ -58,7 +58,7 @@ const Experience = forwardRef((props, ref) => {
                     }
                   >
                     leroymerlin.ro
-                  </span>   
+                  </span>
                 </p>
                 <p>
                   <strong>wordpress:</strong>
