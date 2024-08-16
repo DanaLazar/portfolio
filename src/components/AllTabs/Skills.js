@@ -8,7 +8,7 @@ import {
   IoLogoGithub,
 } from "react-icons/io";
 import { DiPhp, DiBootstrap, DiReact } from "react-icons/di";
-import { SiGraphql, SiMysql, SiJquery } from "react-icons/si";
+import { SiGraphql, SiMysql, SiJquery, SiNextdotjs, SiPrisma, SiJira, SiTailwindcss, SiTypescript } from "react-icons/si";
 
 const Skills = () => {
   return (
@@ -54,6 +54,12 @@ const Skills = () => {
           </span>
         </div>
         <div className="logo">
+          <SiNextdotjs />
+          <span>
+            <strong>Nextjs</strong>
+          </span>
+        </div>
+        <div className="logo">
           <IoLogoWordpress />
           <span>
             <strong>Wordpress</strong>
@@ -72,9 +78,21 @@ const Skills = () => {
           </span>
         </div>
         <div className="logo">
+          <SiTailwindcss />
+          <span>
+            <strong>Tailwind</strong>
+          </span>
+        </div>
+        <div className="logo">
           <SiJquery />
           <span>
             <strong>Jquery</strong>
+          </span>
+        </div>
+        <div className="logo">
+          <SiTypescript />
+          <span>
+            <strong>Typescript</strong>
           </span>
         </div>
         <div className="logo">
@@ -84,9 +102,21 @@ const Skills = () => {
           </span>
         </div>
         <div className="logo">
+          <SiPrisma />
+          <span>
+            <strong>Prisma</strong>
+          </span>
+        </div>
+        <div className="logo">
           <IoLogoGithub />
           <span>
             <strong>Github</strong>
+          </span>
+        </div>
+        <div className="logo">
+          <SiJira />
+          <span>
+            <strong>Jira</strong>
           </span>
         </div>
       </div>

@@ -18,13 +18,48 @@ const Experience = forwardRef((props, ref) => {
                 <CgBriefcase />
               </div>
               <div className="timeline-panel">
-                <h5>From June 2018 - Current - Web Services Solutions</h5>
+                <h5>From June 2022- Current - Zitec</h5>
+                <h4>Frontend developer</h4>
+                <h5>From June 2018 - May 2022 - Web Services Solutions</h5>
                 <h4>Frontend developer</h4>
               </div>
             </div>
             <div className="right column">
               <div className="timeline-panel timeline-inverted">
                 <p>Some of the projects I worked for:</p>
+                <p>
+                  <strong>nextjs:</strong>
+                  <span
+                    className="link"
+                    onClick={() =>
+                      window.open("https://www.heyblu.ro/", "_blank")
+                    }
+                  >
+                    heyblu.ro
+                  </span>   
+                </p>    
+                <p>
+                  <strong>react:</strong>
+                  <span
+                    className="link"
+                    onClick={() =>
+                      window.open("https://promotigo.com/", "_blank")
+                    }
+                  >
+                    promotigo.com
+                  </span>   
+                </p>                
+                <p>
+                  <strong>javascript&css:</strong>
+                  <span
+                    className="link"
+                    onClick={() =>
+                      window.open("https://www.leroymerlin.ro/", "_blank")
+                    }
+                  >
+                    leroymerlin.ro
+                  </span>   
+                </p>
                 <p>
                   <strong>wordpress:</strong>
                   <span

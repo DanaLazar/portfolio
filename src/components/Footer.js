@@ -1,23 +1,21 @@
-import FileSaver from "file-saver";
+import Pdf from "../assets/CV-DanaLazar.pdf";
 import styled from "styled-components";
 import { CgArrowUp, CgArrowDown } from "react-icons/cg";
 import PropTypes from "prop-types";
 
 function Footer(props) {
-  const saveFile = () => {
-    FileSaver.saveAs(
-      `https://danalazar.github.io/portfolio/CV-DanaLazar.pdf`,
-      "CV-DanaLazar.pdf"
-    );
-  };
+  
   return (
     <Wrapper>
       <div className="footer">
         <div className="cv">
-          <h2 onClick={saveFile}>
-            <CgArrowDown />
-            CV
-          </h2>
+          <a href={Pdf} without rel="noopener noreferrer" target="_blank" className="link-pdf">
+            <h2>
+              <CgArrowDown />
+              CV
+            </h2>
+          </a>
+          
         </div>
         <div className="up">
           <h2
@@ -50,7 +48,8 @@ const Wrapper = styled.section`
         flex-direction: row;
         margin: 0 10px;
         justify-content: space-between;
-        .cv, .up {
+        
+        .cv , .up {
           background: #2F3C4F;
           padding: 0.3rem 1rem;
           text-align: center;
@@ -66,6 +65,10 @@ const Wrapper = styled.section`
             background: #e6e6e6;
             color: #4d4d4d;
           }
+  .link-pdf {
+          color: #fff;
+          text-decoration: none;
+        }
         
       }
 `;

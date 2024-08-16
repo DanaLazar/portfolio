@@ -11,6 +11,12 @@ const Education = () => {
       <p>The Complete Web Developer in 2022: Zero to Mastery</p>
       <p>Become a WordPress Developer: Unlocking Power With Code</p>
       <p>React Tutorial and Projects Course</p>
+      <p>
+        <span>Frontend Masters</span>
+      </p>
+      <p>Introduction to Next.js 13+</p>
+      <p>TypeScript 5+</p>
+      <p>Full Stack for Front-End Engineers</p>
       <hr />
       <p>
         <span>University of Bucharest </span>
