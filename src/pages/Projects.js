@@ -1,20 +1,10 @@
 import React, { forwardRef } from "react";
 import styled from "styled-components";
-import {
-  IoLogoHtml5,
-  IoLogoCss3,
-  IoLogoJavascript,
-  IoLogoSass,
-  IoLogoWordpress,
-  IoLogoGithub,
-} from "react-icons/io";
-import { DiPhp, DiBootstrap, DiReact } from "react-icons/di";
-import { SiGraphql, SiJquery } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
+import { SiPrisma, SiZod, SiMui } from "react-icons/si";
 import Sidebar from "../components/Sidebar";
-import pic1 from "../assets/pic1.png";
-import pic2 from "../assets/pic2.png";
-import pic3 from "../assets/pic3.png";
-// eslint-disable-next-line react/display-name
+import users from "../assets/users.jpeg";
+
 const Projects = forwardRef((props, ref) => {
   return (
     <Wrapper>
@@ -22,139 +12,7 @@ const Projects = forwardRef((props, ref) => {
       <div className="main-content">
         <Sidebar />
         <div className="container">
-          <h3 ref={ref}>Personal & School Projects</h3>
-          <div className="timeline">
-            <div className="left column">
-              <div className="timeline-panel">
-                <h4
-                  className="link"
-                  onClick={() =>
-                    window.open("https://hellokidtravel.ro/", "_blank")
-                  }
-                >
-                  hellokidtravel.ro
-                  <br />
-                  <span className="light">personal project</span>
-                </h4>
-                <div className="image">
-                  <img
-                    className="link"
-                    onClick={() =>
-                      window.open("https://hellokidtravel.ro/", "_blank")
-                    }
-                    src={pic2}
-                    alt="hellokidtravel"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="right column">
-              <div className="timeline-panel timeline-inverted">
-                <p>
-                  Hellokidtravel is a traveling website for families.Its aim is
-                  to provide children with information on the places they will
-                  visit and to keep a record of all trips.
-                </p>
-                <p>
-                  <span>features:</span>
-                </p>
-                <ul>
-                  <li>theme constructed from scratch</li>
-                  <li>private information</li>
-                  <li>personalised menu, tests, information for each trip</li>
-                  <li>allows user to add new pages according to their needs</li>
-                </ul>
-                <p>
-                  <span>technologies:</span>{" "}
-                </p>
-                <div>
-                  <span>
-                    <IoLogoWordpress />
-                  </span>
-                  <span>
-                    <DiBootstrap />
-                  </span>
-                  <span>
-                    <DiPhp />
-                  </span>
-                  <span>
-                    <IoLogoHtml5 />
-                  </span>
-                  <span>
-                    <IoLogoCss3 />
-                  </span>
-                  <span>
-                    <SiJquery />
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="timeline">
-            <div className="left column">
-              <div className="timeline-panel">
-                <h4
-                  className="link"
-                  onClick={() =>
-                    window.open("https://class-ecomm.herokuapp.com", "_blank")
-                  }
-                >
-                  Class Component Ecomm Site
-                  <br /> <span className="light">school project</span>
-                </h4>
-                <div className="image">
-                  <img
-                    className="link"
-                    onClick={() =>
-                      window.open("https://class-ecomm.herokuapp.com", "_blank")
-                    }
-                    src={pic1}
-                    alt="class ecomm"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="right column">
-              <div className="timeline-panel timeline-inverted">
-                <p>
-                  This eCommerce site is constructed in 2022 only with class
-                  components, for learning purposes. It allows to add to cart
-                  different variants of the same the product and change the
-                  currency.
-                </p>
-                <p>
-                  <span>features:</span>
-                </p>
-                <ul>
-                  <li>GraphQL endpoint with Apollo</li>
-                  <li>Express server</li>
-                </ul>
-                <p>
-                  <span>technologies:</span>{" "}
-                </p>
-                <div>
-                  <span>
-                    <DiReact />
-                  </span>
-                  <span>
-                    <SiGraphql />
-                  </span>
-                  <span>
-                    <IoLogoJavascript />
-                  </span>
-                  <span>
-                    <IoLogoHtml5 />
-                  </span>
-                  <span>
-                    <IoLogoCss3 />
-                  </span>
-                  <span>
-                    <IoLogoGithub />
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <h3 ref={ref}>Projects</h3>
           <div className="timeline">
             <div className="left column">
               <div className="timeline-panel">
@@ -162,26 +20,36 @@ const Projects = forwardRef((props, ref) => {
                   className="link"
                   onClick={() =>
                     window.open(
-                      "https://react-hook-comfy.netlify.app/",
+                      "https://user-management-peach.vercel.app/",
                       "_blank"
                     )
                   }
                 >
-                  Hook Component Ecomm Site
+                  user management
                   <br />
-                  <span className="light">school project</span>
+                  <span
+                    className="light"
+                    onClick={() =>
+                      window.open(
+                        "https://github.com/DanaLazar/portfolio",
+                        "_blank"
+                      )
+                    }
+                  >
+                    see code
+                  </span>
                 </h4>
                 <div className="image">
                   <img
                     className="link"
                     onClick={() =>
                       window.open(
-                        "https://react-hook-comfy.netlify.app/",
+                        "https://user-management-peach.vercel.app/",
                         "_blank"
                       )
                     }
-                    src={pic3}
-                    alt="hook ecomm"
+                    src={users}
+                    alt="user management"
                   />
                 </div>
               </div>
@@ -189,41 +57,50 @@ const Projects = forwardRef((props, ref) => {
             <div className="right column">
               <div className="timeline-panel timeline-inverted">
                 <p>
-                  This eCommerce site is constructed using hooks, for learning
-                  purposes. It allows to add to cart different variants of the
-                  same product and make payments
+                  This project is built with Next.js and uses a PostgreSQL
+                  database to manage user data. It provides a full-featured user
+                  management system, allowing you to add, update, and delete
+                  users.
                 </p>
                 <p>
                   <span>features:</span>
                 </p>
                 <ul>
-                  <li>stripe payment</li>
-                  <li>stocks</li>
-                  <li>user account and login</li>
-                  <li>sorting</li>
-                  <li>filtering</li>
+                  <li>
+                    Authentication: Secure authentication implemented using
+                    Next.js middleware and JWT token
+                  </li>
+                  <li>
+                    User Management (CRUD Operations): Perform Create, Read,
+                    Update, and Delete (CRUD) operations on a PostgreSQL
+                    database, powered by Prisma and API routes
+                  </li>
+                  <li>
+                    Form Handling and Validation: User input is managed with
+                    React Hook Form, ensuring robust form handling. Data
+                    validation is enforced using Zod to maintain data integrity
+                  </li>
+                  <li>React Admin integration using Next.js API routes</li>
+                  <li>
+                    Styling: The UI is styled using Material-UI (MUI), offering
+                    a polished and responsive user interface.
+                  </li>
                 </ul>
                 <p>
                   <span>technologies:</span>{" "}
                 </p>
                 <div>
                   <span>
-                    <DiReact />
+                    <TbBrandNextjs />
                   </span>
                   <span>
-                    <IoLogoJavascript />
+                    <SiPrisma />
                   </span>
                   <span>
-                    <IoLogoHtml5 />
+                    <SiZod />
                   </span>
                   <span>
-                    <IoLogoCss3 />
-                  </span>
-                  <span>
-                    <IoLogoSass />
-                  </span>
-                  <span>
-                    <IoLogoGithub />
+                    <SiMui />
                   </span>
                 </div>
               </div>
@@ -234,6 +111,8 @@ const Projects = forwardRef((props, ref) => {
     </Wrapper>
   );
 });
+
+Projects.displayName = "Projects";
 
 const Wrapper = styled.section`
   .top {
@@ -295,7 +174,7 @@ const Wrapper = styled.section`
           width: 100%;
           display: block;
           height: 500px;
-          object-fit: cover;
+          object-fit: contain;
         }
         svg {
           margin: 10px;
@@ -356,4 +235,5 @@ const Wrapper = styled.section`
     }
   }
 `;
+
 export default Projects;
