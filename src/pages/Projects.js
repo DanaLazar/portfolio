@@ -1,9 +1,17 @@
 import React, { forwardRef } from "react";
 import styled from "styled-components";
 import { TbBrandNextjs } from "react-icons/tb";
-import { SiPrisma, SiZod, SiMui } from "react-icons/si";
+import {
+  SiPrisma,
+  SiZod,
+  SiMui,
+  SiTypescript,
+  SiReact,
+  SiTailwindcss,
+} from "react-icons/si";
 import Sidebar from "../components/Sidebar";
 import users from "../assets/users.jpeg";
+import planet from "../assets/planet.jpeg";
 
 const Projects = forwardRef((props, ref) => {
   return (
@@ -94,6 +102,9 @@ const Projects = forwardRef((props, ref) => {
                     <TbBrandNextjs />
                   </span>
                   <span>
+                    <SiTypescript />
+                  </span>
+                  <span>
                     <SiPrisma />
                   </span>
                   <span>
@@ -101,6 +112,83 @@ const Projects = forwardRef((props, ref) => {
                   </span>
                   <span>
                     <SiMui />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="timeline">
+            <div className="left column">
+              <div className="timeline-panel">
+                <h4
+                  className="link"
+                  onClick={() =>
+                    window.open(
+                      "https://danalazar.github.io/planet-jump/",
+                      "_blank"
+                    )
+                  }
+                >
+                  planet jump
+                  <br />
+                  <span
+                    className="light"
+                    onClick={() =>
+                      window.open(
+                        "https://github.com/DanaLazar/planet-jump",
+                        "_blank"
+                      )
+                    }
+                  >
+                    see code
+                  </span>
+                </h4>
+                <div className="image">
+                  <img
+                    className="link"
+                    onClick={() =>
+                      window.open(
+                        "https://user-management-peach.vercel.app/",
+                        "_blank"
+                      )
+                    }
+                    src={planet}
+                    alt="user management"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="right column">
+              <div className="timeline-panel timeline-inverted">
+                <p>
+                  This fun space travel project showcases key React.js concepts,
+                  including form handling, API integration, state management,
+                  and layout design.
+                </p>
+                <p>
+                  <span>Features:</span>
+                </p>
+                <ul>
+                  <li>
+                    Form handling, including select options and file uploads
+                  </li>
+                  <li>API calls with data storage in state</li>
+                  <li>State management using Zustand</li>
+                  <li>Interactive image mapping with actions</li>
+                  <li>UI styled with Tailwind CSS</li>
+                </ul>
+                <p>
+                  <span>technologies:</span>{" "}
+                </p>
+                <div>
+                  <span>
+                    <SiReact />
+                  </span>
+                  <span>
+                    <SiTypescript />
+                  </span>
+                  <span>
+                    <SiTailwindcss />
                   </span>
                 </div>
               </div>
