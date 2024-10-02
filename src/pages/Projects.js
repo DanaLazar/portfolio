@@ -148,7 +148,7 @@ const Projects = forwardRef((props, ref) => {
                     className="link"
                     onClick={() =>
                       window.open(
-                        "https://user-management-peach.vercel.app/",
+                        "https://github.com/DanaLazar/planet-jump",
                         "_blank"
                       )
                     }
