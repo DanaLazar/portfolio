@@ -34,19 +34,20 @@ const Projects = forwardRef((props, ref) => {
                   }
                 >
                   user management
-                  <br />
-                  <span
-                    className="light"
-                    onClick={() =>
-                      window.open(
-                        "https://github.com/DanaLazar/portfolio",
-                        "_blank"
-                      )
-                    }
-                  >
-                    see code
-                  </span>
                 </h4>
+
+                <h4
+                  className="light"
+                  onClick={() =>
+                    window.open(
+                      "https://github.com/DanaLazar/user-management",
+                      "_blank"
+                    )
+                  }
+                >
+                  see code
+                </h4>
+
                 <div className="image">
                   <img
                     className="link"
@@ -130,25 +131,25 @@ const Projects = forwardRef((props, ref) => {
                   }
                 >
                   planet jump
-                  <br />
-                  <span
-                    className="light"
-                    onClick={() =>
-                      window.open(
-                        "https://github.com/DanaLazar/planet-jump",
-                        "_blank"
-                      )
-                    }
-                  >
-                    see code
-                  </span>
                 </h4>
+                <h4
+                  className="light"
+                  onClick={() =>
+                    window.open(
+                      "https://github.com/DanaLazar/planet-jump",
+                      "_blank"
+                    )
+                  }
+                >
+                  see code
+                </h4>
+
                 <div className="image">
                   <img
                     className="link"
                     onClick={() =>
                       window.open(
-                        "https://github.com/DanaLazar/planet-jump",
+                        "https://danalazar.github.io/planet-jump/",
                         "_blank"
                       )
                     }
