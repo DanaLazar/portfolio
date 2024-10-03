@@ -36,8 +36,8 @@ const Projects = forwardRef((props, ref) => {
                   user management
                 </h4>
 
-                <h4
-                  className="light"
+                <p
+                  className="light link"
                   onClick={() =>
                     window.open(
                       "https://github.com/DanaLazar/user-management",
@@ -46,7 +46,7 @@ const Projects = forwardRef((props, ref) => {
                   }
                 >
                   see code
-                </h4>
+                </p>
 
                 <div className="image">
                   <img
@@ -132,8 +132,8 @@ const Projects = forwardRef((props, ref) => {
                 >
                   planet jump
                 </h4>
-                <h4
-                  className="light"
+                <p
+                  className="light link"
                   onClick={() =>
                     window.open(
                       "https://github.com/DanaLazar/planet-jump",
@@ -142,7 +142,7 @@ const Projects = forwardRef((props, ref) => {
                   }
                 >
                   see code
-                </h4>
+                </p>
 
                 <div className="image">
                   <img
