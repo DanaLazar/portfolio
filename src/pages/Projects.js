@@ -8,6 +8,9 @@ import {
   SiTypescript,
   SiReact,
   SiTailwindcss,
+  SiCss3,
+  SiJavascript,
+  SiHtml5
 } from "react-icons/si";
 import Sidebar from "../components/Sidebar";
 import users from "../assets/users.jpeg";
@@ -190,6 +193,82 @@ const Projects = forwardRef((props, ref) => {
                   </span>
                   <span>
                     <SiTailwindcss />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="timeline">
+            <div className="left column">
+              <div className="timeline-panel">
+                <h4
+                  className="link"
+                  onClick={() =>
+                    window.open(
+                      "https://danalazar.github.io/math-match/",
+                      "_blank"
+                    )
+                  }
+                >
+                  math memory game
+                </h4>
+                <p
+                  className="light link"
+                  onClick={() =>
+                    window.open(
+                      "https://github.com/DanaLazar/math-match",
+                      "_blank"
+                    )
+                  }
+                >
+                  see code
+                </p>
+
+                <div className="image">
+                  <img
+                    className="link"
+                    onClick={() =>
+                      window.open(
+                        "https://danalazar.github.io/math-match/",
+                        "_blank"
+                      )
+                    }
+                    src={planet}
+                    alt="user management"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="right column">
+              <div className="timeline-panel timeline-inverted">
+                <p>
+                  This interactive math matching game demonstrates key JavaScript concepts, including DOM manipulation, event handling, and basic state management
+                </p>
+                <p>
+                  <span>Features:</span>
+                </p>
+                <ul>
+                  <li>
+                    Number matching with squares or multiplication tables (choose between squares, multiplication with a specific factor, or a random factor)
+                  </li>
+                  <li>Dynamic card generation based on game mode</li>
+                  <li>Click-based event handling and card flipping</li>
+                  <li>Tracking total clicks, best score, and most clicked pairs</li>
+                  <li>Real-time state updates, such as matched pairs and scores</li>
+                </ul>
+                <p>The real utility of the game remains to be tested on my children.</p>
+                <p>
+                  <span>technologies:</span>{" "}
+                </p>
+                <div>
+                  <span>
+                    <SiCss3 />
+                  </span>
+                  <span>
+                    <SiHtml5 />
+                  </span>
+                  <span>
+                    <SiJavascript />
                   </span>
                 </div>
               </div>
