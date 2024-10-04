@@ -10,7 +10,7 @@ import {
   SiTailwindcss,
   SiCss3,
   SiJavascript,
-  SiHtml5
+  SiHtml5,
 } from "react-icons/si";
 import Sidebar from "../components/Sidebar";
 import users from "../assets/users.jpeg";
@@ -242,14 +242,16 @@ const Projects = forwardRef((props, ref) => {
             <div className="right column">
               <div className="timeline-panel timeline-inverted">
                 <p>
-                  This interactive math matching game demonstrates key JavaScript concepts, including DOM manipulation, event handling, and basic state management
+                  This interactive math matching game demonstrates key JavaScript concepts, including DOM manipulation, event
+                  handling, and basic state management
                 </p>
                 <p>
                   <span>Features:</span>
                 </p>
                 <ul>
                   <li>
-                    Number matching with squares or multiplication tables (choose between squares, multiplication with a specific factor, or a random factor)
+                    Number matching with squares or multiplication tables (choose between squares, multiplication with a specific
+                    factor, or a random factor)
                   </li>
                   <li>Dynamic card generation based on game mode</li>
                   <li>Click-based event handling and card flipping</li>
