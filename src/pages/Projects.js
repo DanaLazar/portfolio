@@ -15,6 +15,7 @@ import {
 import Sidebar from "../components/Sidebar";
 import users from "../assets/users.jpeg";
 import planet from "../assets/planet.jpeg";
+import memory from "../assets/memory.png";
 
 const Projects = forwardRef((props, ref) => {
   return (
@@ -233,7 +234,7 @@ const Projects = forwardRef((props, ref) => {
                         "_blank"
                       )
                     }
-                    src={planet}
+                    src={memory}
                     alt="math memory game"
                   />
                 </div>
