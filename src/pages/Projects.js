@@ -157,7 +157,7 @@ const Projects = forwardRef((props, ref) => {
                       )
                     }
                     src={planet}
-                    alt="user management"
+                    alt="planet jump"
                   />
                 </div>
               </div>
@@ -234,7 +234,7 @@ const Projects = forwardRef((props, ref) => {
                       )
                     }
                     src={planet}
-                    alt="user management"
+                    alt="math memory game"
                   />
                 </div>
               </div>
@@ -242,23 +242,32 @@ const Projects = forwardRef((props, ref) => {
             <div className="right column">
               <div className="timeline-panel timeline-inverted">
                 <p>
-                  This interactive math matching game demonstrates key JavaScript concepts, including DOM manipulation, event
-                  handling, and basic state management
+                  This interactive math matching game demonstrates key
+                  JavaScript concepts, including DOM manipulation, event
+                  handling, and basic state management.
                 </p>
                 <p>
                   <span>Features:</span>
                 </p>
                 <ul>
                   <li>
-                    Number matching with squares or multiplication tables (choose between squares, multiplication with a specific
+                    Number matching with squares or multiplication tables
+                    (choose between squares, multiplication with a specific
                     factor, or a random factor)
                   </li>
                   <li>Dynamic card generation based on game mode</li>
                   <li>Click-based event handling and card flipping</li>
-                  <li>Tracking total clicks, best score, and most clicked pairs</li>
-                  <li>Real-time state updates, such as matched pairs and scores</li>
+                  <li>
+                    Tracking total clicks, best score, and most clicked pairs
+                  </li>
+                  <li>
+                    Real-time state updates, such as matched pairs and scores
+                  </li>
                 </ul>
-                <p>The real utility of the game remains to be tested on my children.</p>
+                <p>
+                  The real utility of the game remains to be tested on my
+                  children.
+                </p>
                 <p>
                   <span>technologies:</span>{" "}
                 </p>
@@ -298,7 +307,7 @@ const Wrapper = styled.section`
   .main-content {
     display: flex;
     flex-direction: row;
-    min-height: calc(100vh - 80px;);
+    min-height: calc(100vh - 80px);
     margin-left: 110px;
     .container {
       background: #fff;
@@ -331,73 +340,48 @@ const Wrapper = styled.section`
           text-align: center;
           &.left {
             text-align: right;
-            width: 45%;
-            padding: 30px 20px 30px 0;
+            padding-right: 80px;
+            width: 50%;
+            .timeline-panel {
+              background: #f4f4f4;
+              padding: 20px;
+              position: relative;
+              text-align: left;
+              display: inline-block;
+              border-radius: 10px;
+              .image {
+                margin-top: 10px;
+                img {
+                  width: 100%;
+                  height: auto;
+                }
+              }
+              h4 {
+                margin-bottom: 0px;
+                cursor: pointer;
+              }
+              .light {
+                font-weight: 100;
+              }
+              .link {
+                cursor: pointer;
+                color: #0073e6;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
           }
           &.right {
-            text-align: left;
-            width: 55%;
-            padding: 30px 0 30px 20px;
-          }
-        }
-        img {
-          width: 100%;
-          display: block;
-          height: 500px;
-          object-fit: contain;
-        }
-        svg {
-          margin: 10px;
-          width: 40px;
-          height: 40px;
-          color: #ff9000;
-          background: #e6e6e6;
-          padding: 8px;
-          border-radius: 50%;
-        }
-        ul {
-          margin-bottom: 20px;
-          li {
-            margin-left: 15px;
-          }
-        }
-      }
-    }
-  }
-  @media screen and (max-width: 779px) {
-    .top {
-      display: none;
-    }
-    .main-content {
-      flex-direction: column;
-      margin-left: 0;
-      margin-top: 100px;
-      .container {
-        width: 95%;
-        margin: 10px;
-        padding: 0;
-        h3 {
-          margin: 20px 0 40px;
-        }
-        .timeline {
-          flex-direction: column;
-          &:before {
-            display: none;
-          }
-          .column {
-            &.left {
+            width: 50%;
+            padding-left: 80px;
+            .timeline-panel {
+              background: #f4f4f4;
+              padding: 20px;
+              position: relative;
               text-align: left;
-              width: 100%;
-              padding: 10px;
-            }
-            &.right {
-              text-align: left;
-              width: 100%;
-              padding: 10px;
-            }
-            .timeline-badge {
-              top: -50px;
-              right: 50%;
+              display: inline-block;
+              border-radius: 10px;
             }
           }
         }
